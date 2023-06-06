@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className='fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-slate-400 text-white w-full text-center py-2'>
+    <footer className='bg-slate-400 text-white w-full text-center py-2'>
       <div className='mt-2 flex justify-center'>
         <a
           href='https://github.com/gsquarles/porfolio'
