@@ -1,10 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faJs,
-  faReact,
-  faCss3Alt,
-  faHtml5,
-} from "@fortawesome/free-brands-svg-icons";
 import { Footer } from "../components/Footer";
 import {
   SiVitest,
@@ -23,6 +16,7 @@ import {
 } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
 import { FaNpm } from "react-icons/fa";
+import { useEffect } from "react";
 
 const ICONS = [
   { title: "HTML", image: "SiHtml5", color: "#f1652a" },
@@ -43,10 +37,13 @@ const ICONS = [
 ];
 
 export function AboutMe() {
+  useEffect(() => {
+    document.title = "About";
+  }, []);
   return (
     <>
       <div className='flex flex-col min-h-screen'>
-        <main className=' flex-grow p-3 lg:px-72 lg:py-6'>
+        <main className=' flex-grow p-3 md:px-32 lg:px-72 lg:py-6'>
           <section className='mt-4'>
             <p className=' uppercase text-primary font-medium text-lg lg:text-xl text-center'>
               About me

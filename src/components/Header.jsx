@@ -15,7 +15,7 @@ export function Header() {
             to='/'
             className=' font-sans text-xl lg:text-3xl  hover:scale-105 w-1/2 cursor-pointer'
           >
-            <span className='text-primary'>Griffin </span> <span>Quarles</span>
+            <span className='text-primary'> 𝒢𝓇𝒾𝒻𝒻𝒾𝓃 </span> <span>𝒬𝓊𝒶𝓇𝓁𝑒𝓈</span>
           </Link>
         </div>
         <nav className='w-1/2 justify-end items-center flex ml-auto mr-3 md:mr-14 lg:mr-20'>

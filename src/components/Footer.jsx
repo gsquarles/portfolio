@@ -5,7 +5,7 @@ export function Footer() {
     <footer className='bg-slate-400 text-white w-full text-center py-2'>
       <div className='mt-2 flex justify-center'>
         <a
-          href='https://github.com/gsquarles/porfolio'
+          href='https://github.com/gsquarles'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-400 transition-colors duration-300 mx-2'

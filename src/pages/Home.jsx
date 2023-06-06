@@ -10,6 +10,7 @@ export function Home() {
 
   useEffect(() => {
     setFadeIn(true);
+    document.title = "Home";
   }, []);
 
   return (
