@@ -47,12 +47,14 @@ export function Header() {
                 </Link>
               </li>
               <li className='p-1 md:p-2 hover:underline'>
-                <Link
-                  to='/resume'
+                <a
+                  href='../../resume.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-lg md:text-xl text-primary lg:text-2xl'
                 >
                   Resume
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -94,13 +96,15 @@ export function Header() {
                 </Link>
               </li>
               <li className='p-1'>
-                <Link
-                  to='/resume'
+                <a
+                  href='../../resume.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-lg text-white'
                   onClick={closeMenu}
                 >
                   Resume
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

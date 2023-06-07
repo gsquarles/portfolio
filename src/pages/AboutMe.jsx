@@ -19,21 +19,21 @@ import { FaNpm } from "react-icons/fa";
 import { useEffect } from "react";
 
 const ICONS = [
-  { title: "HTML", image: "SiHtml5", color: "#f1652a" },
-  { title: "CSS", image: "SiCss3", color: "#2865f0" },
-  { title: "Javascript", image: "SiJavascript", color: "#f7df1c" },
-  { title: "React.js", image: "SiReact", color: "#00d8fe" },
-  { title: "Tailwind CSS", image: "SiTailwindcss", color: "#06b6d5" },
-  { title: "Firebase", image: "SiFirebase", color: "#ffa72c" },
-  { title: "Webpack", image: "SiWebpack", color: "#1b78c0" },
-  { title: "Vitest", image: "SiVitest", color: "#fcc72b" },
-  { title: "Jest", image: "SiJest", color: "#c63c14" },
-  { title: "Node.js", image: "SiNodedotjs", color: "#8cc84b" },
-  { title: "React Router", image: "SiReactrouter", color: "" },
-  { title: "Git", image: "SiGit", color: "#de4b36" },
-  { title: "Netlify", image: "SiNetlify", color: "#4e9abf" },
-  { title: "Linux Cli", image: "FcLinux", color: "" },
-  { title: "npm", image: "FaNpm", color: "#c12027" },
+  { title: "HTML", image: SiHtml5, color: "#f1652a" },
+  { title: "CSS", image: SiCss3, color: "#2865f0" },
+  { title: "Javascript", image: SiJavascript, color: "#f7df1c" },
+  { title: "React.js", image: SiReact, color: "#00d8fe" },
+  { title: "Tailwind CSS", image: SiTailwindcss, color: "#06b6d5" },
+  { title: "Firebase", image: SiFirebase, color: "#ffa72c" },
+  { title: "Webpack", image: SiWebpack, color: "#1b78c0" },
+  { title: "Vitest", image: SiVitest, color: "#fcc72b" },
+  { title: "Jest", image: SiJest, color: "#c63c14" },
+  { title: "Node.js", image: SiNodedotjs, color: "#8cc84b" },
+  { title: "React Router", image: SiReactrouter, color: "" },
+  { title: "Git", image: SiGit, color: "#de4b36" },
+  { title: "Netlify", image: SiNetlify, color: "#4e9abf" },
+  { title: "Linux Cli", image: FcLinux, color: "" },
+  { title: "npm", image: FaNpm, color: "#c12027" },
 ];
 
 export function AboutMe() {
@@ -91,7 +91,7 @@ export function AboutMe() {
             </div>
             <div className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 mt-5'>
               {ICONS.map((icon, index) => {
-                const IconComponent = eval(icon.image);
+                const IconComponent = icon.image;
                 return (
                   <div
                     className='flex flex-col gap-1 justify-center items-center mb-5'
